@@ -61,7 +61,7 @@ local Window = Library.CreateLib("Antware_hub", "DarkTheme")
     local OtherSection = Other:NewSection("Aimbot")
 	
 	OtherSection:NewButton("bols_hub", "best_aresneal hack ever", function()
-        loadstring(game:HttpGet(('loadstring(game:HttpGet(('https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Arsenal2'),true))()'),true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Arsenal2"))()
     end)
 	
 	OtherSection:NewButton("owl_hub", "best_aresneal hack ever", function()
