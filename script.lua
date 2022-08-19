@@ -23,39 +23,6 @@ local Window = Library.CreateLib("Antware_hub", "DarkTheme")
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
 
-
-    --LOCAL PLAYER
-    local Player = Window:NewTab("Player")
-    local PlayerSection = Player:NewSection("Player")
-
-    PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-    end)
-
-    PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-    end)
-
-    PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-    end)
-
-
-    --Other
-    local Other = Window:NewTab("Other")
-    local OtherSection = Other:NewSection("Other")
-
-    OtherSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
-        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
-    end)
-
-    OtherSection:NewButton("Bypassed Fly", "bird mode", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
-
-        Fly(true)
-    end)
-	
 	--aresenal aimbot
 	local Other = Window:NewTab("Aresenal Aimbot")
     local OtherSection = Other:NewSection("Aimbot")
@@ -65,7 +32,7 @@ local Window = Library.CreateLib("Antware_hub", "DarkTheme")
     end)
 	
 	OtherSection:NewButton("owl_hub", "best_aresneal hack ever", function()
-        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
     end)
 	
 	
